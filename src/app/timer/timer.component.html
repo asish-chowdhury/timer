@@ -1,8 +1,7 @@
-<div>
-    <h2>{{ formatTime() }}</h2>
-    <button (click)="startTimer()" [disabled]="isPaused" [disabled]="isStart" [disabled]=isResume >Start</button>
-    <button (click)="resetTimer()">Reset</button>
-    <button (click)="pauseTimer()" [disabled]="isPaused">Pause</button>
-    <button (click)="resumeTimer()" [disabled]="!isPaused">Resume</button>
-  </div>
-  
+<div class="container">
+  <h2>{{ formatTime() }}</h2>
+  <button (click)="startTimer()" [disabled]="isPaused" [disabled]="isStart" [disabled]=isResume>Start</button>
+  <button (click)="resetTimer()">Reset</button>
+  <button (click)="pauseTimer()" [disabled]="isPaused">Pause</button>
+  <button (click)="resumeTimer()" [disabled]="!isPaused">Resume</button>
+</div>
